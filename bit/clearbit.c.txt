@@ -1,0 +1,15 @@
+6)Write a C program to clear nth bit of a number.
+
+#include<stdio.h>
+int main()
+{
+    int j, n, newj;
+    printf("Enter any number: ");
+    scanf("%d", &j);//2
+    printf("Enter nth bit to clear (0-31): ");
+    scanf("%d", &n);//2
+    newj = j & (~(1 << n));//2&(~(1<<2))
+     printf("Bit cleared successfully.\n\n");
+    printf("Number after clearing %d bit: %d (in decimal)\n", n, newj);//2
+    return 0;
+}
