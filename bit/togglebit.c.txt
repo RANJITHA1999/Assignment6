@@ -1,0 +1,16 @@
+4)Write a C program to toggle nth bit of a number.
+
+#include<stdio.h>
+int main()
+{
+    int j, n, newj;
+    printf("Enter any number: ");
+    scanf("%d", &j);//2
+    printf("Enter nth bit to toggle (0-31): ");//2
+    scanf("%d", &n);
+    newj = j ^ (1 << n);//2^(1<<2)
+
+    printf("Bit toggled successfully.\n\n");
+    printf("Number after toggling %d bit: %d (in decimal)\n", n, newj);//6
+	return 0;
+}
