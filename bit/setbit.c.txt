@@ -1,0 +1,15 @@
+3)Write a C program to set nth bit of a number.
+
+#include<stdio.h>
+int main()
+{
+    int number,bit_pos;
+    printf("Enter the Number:");//2
+    scanf("%d", &number);
+    printf("Enter the Bit position you want to set(Between 0-31):");//1
+    scanf("%d", &bit_pos);
+    int mask=(1<<bit_pos);//(1<<1)
+     number=number|mask;
+    printf("The number after set the bit in the given position is: %d",number);//2
+    return 0;
+}
