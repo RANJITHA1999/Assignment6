@@ -1,0 +1,14 @@
+5)Write a C program to swap two numbers using bitwise operator.
+
+#include<stdio.h>
+int main() {
+    int i = 2;
+    int k = 3;
+    
+    i = i ^ k;
+    k = i ^ k;
+    i = i ^ k;
+    printf("value of i=%d k=%d after swapping", i, k);
+
+    return 0;
+}
