@@ -1,0 +1,15 @@
+2)Write a C program to get nth bit of a number.
+
+#include<stdio.h>
+int main()
+{
+    int j, n, bitStatus;
+    printf("Enter any number: ");//2(0010)
+    scanf("%d", &j);
+    printf("Enter nth bit to check (0-31): ");//1
+    scanf("%d", &n);
+    bitStatus = (j >> n) & 1;//(2>>1)&1 
+
+    printf("The %d bit is set to %d", n, bitStatus);//1 is set to 1
+    return 0;
+}
